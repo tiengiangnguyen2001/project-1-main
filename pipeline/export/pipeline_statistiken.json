@@ -1,0 +1,73 @@
+{
+  "statistiken": {
+    "filme": 5,
+    "schauspieler": 5,
+    "quellen": [
+      "Fallback"
+    ]
+  },
+  "beispiel_filme": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "genre": "Sci-Fi",
+      "nation": "USA",
+      "director": "Christopher Nolan",
+      "description": "Inception (2010) - Sci-Fi Film aus USA",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    },
+    {
+      "id": 2,
+      "title": "Parasite",
+      "year": 2019,
+      "genre": "Drama",
+      "nation": "Südkorea",
+      "director": "Bong Joon-ho",
+      "description": "Parasite (2019) - Drama Film aus Südkorea",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "genre": "Action",
+      "nation": "USA",
+      "director": "Christopher Nolan",
+      "description": "The Dark Knight (2008) - Action Film aus USA",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    }
+  ],
+  "beispiel_schauspieler": [
+    {
+      "id": 1,
+      "name": "Leonardo DiCaprio",
+      "birth_year": 1974,
+      "nation": "USA",
+      "bio": "Amerikanischer Schauspieler.",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    },
+    {
+      "id": 2,
+      "name": "Song Kang-ho",
+      "birth_year": 1967,
+      "nation": "Südkorea",
+      "bio": "Südkoreanischer Schauspieler.",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    },
+    {
+      "id": 3,
+      "name": "Christian Bale",
+      "birth_year": 1974,
+      "nation": "UK",
+      "bio": "Britischer Schauspieler.",
+      "source": "Fallback",
+      "created_at": "2026-02-04 21:17:44"
+    }
+  ]
+}

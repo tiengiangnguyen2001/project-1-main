@@ -1,0 +1,108 @@
+/* CSS Variablen definieren */
+:root {
+    --primary-red: #e60000;
+    --dark-bg: #000;
+    --gray-text: #aaa;
+    --card-bg: #111;
+    --border-color: #333;
+}
+
+/* Poster Grid für Filme */
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.poster-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.poster-card:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-5px);
+}
+
+.poster-img {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--gray-text);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 70vh;
+    background: url('/static/cinema-background.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+}
+
+/* Spezifisch für Schauspieler-Kreise */
+.initial-circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-red);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 15px;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .hero-section {
+        height: 50vh;
+    }
+}
+
+/* Suchfeld Styling */
+.search-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.search-container input {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-container input:focus {
+    border-color: var(--primary-red);
+    outline: none;
+}

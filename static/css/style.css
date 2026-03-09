@@ -1,0 +1,5 @@
+.poster-img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}

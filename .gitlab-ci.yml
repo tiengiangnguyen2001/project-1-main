@@ -1,0 +1,7 @@
+image: registry.code.fbi.h-da.de/runcon/images/mwienk/docker-lftp:latest
+
+deploy:
+  script:
+    - lftp -e "open ftp://yoda.media.h-da.de; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ --reverse --verbose --delete --transfer-all ./ www; bye"
+  rules:
+    - if: '$CI_COMMIT_MESSAGE =~ /yoda/'
